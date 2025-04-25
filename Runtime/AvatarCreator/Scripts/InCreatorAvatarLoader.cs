@@ -22,6 +22,7 @@ namespace ReadyPlayerMe.AvatarCreator
 
         public async Task<GameObject> Load(string avatarId, OutfitGender gender, byte[] data)
         {
+            Debug.Log("HELLO WORDL!");
             var avatarMetadata = new AvatarMetadata();
             avatarMetadata.BodyType = CoreSettingsHandler.CoreSettings.BodyType;
             avatarMetadata.OutfitGender = gender;
